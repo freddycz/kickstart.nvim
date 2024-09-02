@@ -907,7 +907,6 @@ require('lazy').setup({
     },
   },
 })
-
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- which loads which-key before all the UI elements are loaded. Events can be
 -- vim: ts=2 sts=2 sw=2 et
