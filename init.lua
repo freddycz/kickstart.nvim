@@ -298,6 +298,21 @@ require('lazy').setup({
     end,
   },
 
+  {
+    'windwp/nvim-ts-autotag',
+    event = { 'BufNewFile', 'BufReadPre' },
+    config = function()
+      require('nvim-ts-autotag').setup {
+        opts = {
+          -- Defaults
+          enable_close = true, -- Auto close tags
+          enable_rename = true, -- Auto rename pairs of tags
+          enable_close_on_slash = false, -- Auto close on trailing </
+        },
+      }
+    end,
+  },
+
   { -- Fuzzy Finder (files, lsp, etc)
     'nvim-telescope/telescope.nvim',
     event = 'VimEnter',
@@ -572,6 +587,7 @@ require('lazy').setup({
       local servers = {
         clangd = {},
         gopls = {},
+        html = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
