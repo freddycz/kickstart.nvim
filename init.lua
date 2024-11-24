@@ -591,7 +591,30 @@ require('lazy').setup({
         gopls = {},
         html = {},
         cssls = {},
-        pylsp = {},
+        tailwindcss = {},
+        pylsp = {
+          settings = {
+            pylsp = {
+              configurationSources = { 'flake8' },
+              plugins = {
+                flake8 = {
+                  enabled = false,
+                  ignore = { 'E501', 'E231' },
+                  maxLineLength = 88,
+                },
+                black = { enabled = true },
+                autopep8 = { enabled = false },
+                mccabe = { enabled = false },
+                pycodestyle = {
+                  enabled = false,
+                  ignore = { 'E501', 'E231' },
+                  maxLineLength = 88,
+                },
+                pyflakes = { enabled = false },
+              },
+            },
+          },
+        },
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
