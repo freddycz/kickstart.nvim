@@ -592,6 +592,7 @@ require('lazy').setup({
         html = {},
         cssls = {},
         tailwindcss = {},
+        arduino_language_server = {},
         pylsp = {
           settings = {
             pylsp = {
