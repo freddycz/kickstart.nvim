@@ -639,6 +639,7 @@ require('lazy').setup({
             },
           },
         },
+        prismals = {},
       }
 
       -- Ensure the servers and tools above are installed
