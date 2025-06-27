@@ -640,6 +640,7 @@ require('lazy').setup({
           },
         },
         prismals = {},
+        eslint = {},
       }
 
       -- Ensure the servers and tools above are installed
