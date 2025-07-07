@@ -641,6 +641,7 @@ require('lazy').setup({
         },
         prismals = {},
         eslint = {},
+        prettierd = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -690,7 +691,7 @@ require('lazy').setup({
       },
     },
     opts = {
-      notify_on_error = false,
+      notify_on_error = true,
       format_on_save = function(bufnr)
         -- Disable "format_on_save lsp_fallback" for languages that don't
         -- have a well standardized coding style. You can add additional
@@ -707,7 +708,16 @@ require('lazy').setup({
         python = { 'isort' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { 'prettierd' },
+        javascriptreact = { 'prettierd' },
+        typescript = { 'prettierd' },
+        typescriptreact = { 'prettierd' },
+        json = { 'prettierd' },
+        yaml = { 'prettierd' },
+        markdown = { 'prettierd' },
+        html = { 'prettierd' },
+        css = { 'prettierd' },
+        scss = { 'prettierd' },
       },
     },
   },
