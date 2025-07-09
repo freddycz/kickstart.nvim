@@ -640,7 +640,6 @@ require('lazy').setup({
           },
         },
         prismals = {},
-        eslint = {},
         prettierd = {},
       }
 
