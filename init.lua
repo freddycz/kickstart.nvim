@@ -642,6 +642,7 @@ require('lazy').setup({
         prismals = {},
         prettierd = {},
         eslint = {},
+        phpactor = {},
       }
 
       -- Ensure the servers and tools above are installed
