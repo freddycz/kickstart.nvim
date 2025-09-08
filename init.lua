@@ -589,7 +589,9 @@ require('lazy').setup({
       local servers = {
         clangd = {},
         gopls = {},
-        html = {},
+        html = {
+          filetypes = { 'html', 'php' },
+        },
         cssls = {},
         tailwindcss = {},
         arduino_language_server = {},
